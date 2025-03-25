@@ -47,7 +47,7 @@ int main(int argc, char *argv) {
 
     bzero(buffer,1024);
     strcpy(buffer, "Hello.This is server");
-    recvfrom(sockfd, buffer, 1024, 0, (struct sockaddr*)&client, &addr_size);
+    sendto(sockfd, buffer, 1024, 0, (struct sockaddr*)&client, &addr_size);
     printf("Data Send: %s\n", buffer);   
 
     return 0;
