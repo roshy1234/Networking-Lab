@@ -22,7 +22,7 @@ int main() {
     }
     printf("[+]TCP Server Socket Created\n");
     
-    memset(&addr, '\0', sizeof(server)); /
+    memset(&addr, '\0', sizeof(addr)); /
     addr.sin_family = AF_INET;
     addr.sin_port = port
     addr.sin_addr.s_addr = inet_addr(ip);
