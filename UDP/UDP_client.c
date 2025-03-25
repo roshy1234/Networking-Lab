@@ -29,7 +29,7 @@ int main(int argc, char *argv) {
         exit(1);
     }
 
-    memset(&server, '\0', sizeof(addr)); /
+    memset(&addr, '\0', sizeof(addr)); /
     addr.sin_family = AF_INET;
     addr.sin_port = htons(port)
     addr.sin_addr.s_addr = inet_addr(ip);
